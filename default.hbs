@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="{{@site.locale}}">
+
+<head>
+
+    {{!-- Basic meta - advanced meta is output with {ghost_head} below --}}
+    <title>{{meta_title}}</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {{!-- Theme assets - use the {asset} helper to reference styles & scripts,
+    this will take care of caching and cache-busting automatically --}}
+    <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
+
+    {{!-- This tag outputs all your advanced SEO meta, structured data, and other important settings,
+    it should always be the last tag before the closing head tag --}}
+    {{ghost_head}}
+
+</head>
+
+<body class="{{body_class}}">
+    {{> "header"}}
+    {{> "nav"}}
+    <div class="content_container">
+        <main>
+            {{!-- All other templates get inserted here, index.hbs, post.hbs, etc --}}
+            {{{body}}}
+        </main>
+        {{> "side-bar"}}
+    </div>
+    <footer>
+        <hr>
+        <h1>footer</h1>
+    </footer>
+</body>
+
+</html>

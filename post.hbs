@@ -1,0 +1,14 @@
+{{!< default}}
+
+
+{{#post}}
+<article class="post-card">
+    <div class="post_content">
+        <h1>{{title}}</h1>
+        <time class="post-date" datetime="{{date format="YYYY-MM-DD"}}">
+            {{date published_at}}
+        </time>
+        {{content}}
+    </div>
+</article>
+{{/post}}
