@@ -1,30 +1,30 @@
 <div class="sidebar-container">
     <div class="sidebar">
         <div class="post_content">
-            <h4 class="widget-title">Recent Posts</h4>
-            {{#get "posts" limit="3" include="tags" as |recents|}}
+            <h2 class="widget-title">Recent Posts</h2>
+            {{#get "posts" limit="5" include="tags" as |recents|}}
             {{#if recents}}
-            <div class="recent-posts">
+            <ul class="sidebar-recent">
                 {{#foreach recents}}
-                <article class="recent">
+                <li>
                     <a class="post-title-link" href="{{url}}">{{title}}</a>
-                </article>
+                </li>
                 {{/foreach}}
-            </div>
+            </ul>
             {{/if}}
             {{/get}}
-            <h4 class="widget-title">Tags</h4>
+            <h2 class="widget-title">Tags</h2>
             {{#get "tags" limit="10" include="count.posts"}}
-            <div class="tag-feed">
+            <ul class="sidebar-tags">
                 {{#foreach tags}}
-                <div class="tag">
+                <li>
                     <a class="tag-link" href="{{url}}">
                         <span class="tag-name">{{name}}</span>
-                        <span class="tag-count">{{count.posts}}</span>
+                        <span class="tag-count">({{count.posts}})</span>
                     </a>
-                </div>
+                </li>
                 {{/foreach}}
-            </div>
+            </ul>
             {{/get}}
         </div>
     </div>
