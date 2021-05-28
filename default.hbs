@@ -13,11 +13,28 @@
     {{!-- Theme assets - use the {asset} helper to reference styles & scripts,
     this will take care of caching and cache-busting automatically --}}
     <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
-   
+    <script src="{{asset 'js/main.js'}}"></script>
+
     {{!-- This tag outputs all your advanced SEO meta, structured data, and other important settings,
     it should always be the last tag before the closing head tag --}}
     {{ghost_head}}
-   
+
+
+    <script src="https://kit.fontawesome.com/6464728151.js" crossorigin="anonymous"></script>
+
+
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="{{asset "ghostHunter/dist/jquery.ghosthunter.js"}}"></script>
+
+    <script>
+  var ghosthunter_key = 'a6fed4e131f728184bf6dabe3a';
+  //optional: set your custom ghost_root url, default is `"/ghost/api/v2"`
+  var ghost_root_url = "/ghost/api/v2"
+</script>
+
 </head>
 
 <body class="{{body_class}}">

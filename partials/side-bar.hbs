@@ -1,6 +1,16 @@
 <div class="sidebar-container">
     <div class="sidebar">
         <div class="post_content">
+            <form>
+                <input id="search-field" />
+                <input type="submit" value="search">
+            </form>
+            <section id="results"></section>
+            <script>
+                $("#search-field").ghostHunter({
+                    results: "#results"
+                });
+            </script>
             <h2 class="widget-title">Recent Posts</h2>
             {{#get "posts" limit="5" include="tags" as |recents|}}
             {{#if recents}}
@@ -19,6 +29,7 @@
                 {{#foreach tags}}
                 <li>
                     <a class="tag-link" href="{{url}}">
+                        <i class="fas fa-hashtag"></i>
                         <span class="tag-name">{{name}}</span>
                         <span class="tag-count">({{count.posts}})</span>
                     </a>

@@ -1,5 +1,17 @@
 {{#if @site.navigation}}
 <nav class="header-nav">
-    {{navigation}}
+    <div class="hbg_button">
+        <div onclick="navMenuToggle();" class="hamburger" id="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+    </div>
+    <div class="menu">
+        {{navigation}}
+    </div>
+    <div class="hbg-menu">
+        {{navigation}}
+    </div>
 </nav>
 {{/if}}
