@@ -200,7 +200,7 @@ footer {
 .widget-title {
     border-bottom: 2px solid #9ce159;
     padding-bottom: 8px;
-    margin-top: 8px;
+    margin: 8px 0 0 0;
     display: inline-block;
 }
 
@@ -363,6 +363,7 @@ figure figcaption {
 
 .kg-bookmark-icon {
     width: 22px;
+    margin-right: 8px;
 }
 
 .kg-bookmark-description {
