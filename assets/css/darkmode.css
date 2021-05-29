@@ -48,4 +48,8 @@
     .input-drop li:hover {
         background-color: #202020;
     }
+
+    .kg-bookmark-card {
+        background-color: #303030;
+    }
 }

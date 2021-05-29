@@ -10,7 +10,7 @@ function navMenuToggle() {
 
 // Blog Search - GhostContentAPI
 // Copyright (c) 2021 by dbauzus-glx (https://codepen.io/dbauszus-glx/pen/oNNVMxx)
-// injection this code in site header
+// injection this code in siteheader
 /*
 let ghostAPI = new GhostContentAPI({
     url: "http://site.url",
