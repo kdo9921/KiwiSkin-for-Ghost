@@ -367,11 +367,14 @@ figure figcaption {
 
 .kg-bookmark-icon {
     width: 22px;
-    margin-right: 8px;
 }
 
 .kg-bookmark-description {
     margin: 8px 0;
+}
+
+.kg-bookmark-author {
+    margin: 0 8px;
 }
 
 /* desktop size */
