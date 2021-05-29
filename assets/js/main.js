@@ -16,7 +16,6 @@ let ghostAPI = new GhostContentAPI({
     key: "ContentAPIkey",
     version: "v3"
 });
-*/
 
 ghostAPI.posts
     .browse({
@@ -85,3 +84,5 @@ function initSearch(data) {
         input_drop.classList.add("active");
     });
 }
+
+*/
