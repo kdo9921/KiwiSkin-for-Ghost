@@ -1,0 +1,51 @@
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #303030;
+        color: #dddddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    a,
+    a:link,
+    a:visited,
+    .post-feed a:hover,
+    .post-feed a:active,
+    footer {
+        color: #dddddd;
+    }
+
+    a:hover {
+        color: #9ce159;
+    }
+
+    .hamburger .line {
+        background-color: #dddddd;
+    }
+
+    .post-card,
+    .sidebar,
+    .header-nav,
+    .pagination a,
+    footer {
+        background-color: #202020;
+    }
+
+    #search input {
+        color: #dddddd;
+        background-color: #303030;
+        border-color: #303030;
+    }
+
+    .input-drop ul {
+        background-color: #303030;
+    }
+
+    .input-drop li:hover {
+        background-color: #202020;
+    }
+}
