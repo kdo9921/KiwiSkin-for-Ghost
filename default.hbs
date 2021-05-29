@@ -12,8 +12,12 @@
 
     {{!-- Theme assets - use the {asset} helper to reference styles & scripts,
     this will take care of caching and cache-busting automatically --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/@tryghost/content-api@1.5.6/umd/content-api.min.js"></script>
+
     <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
     <script src="{{asset 'js/main.js'}}"></script>
+
 
     {{!-- This tag outputs all your advanced SEO meta, structured data, and other important settings,
     it should always be the last tag before the closing head tag --}}
@@ -23,10 +27,7 @@
     <script src="https://kit.fontawesome.com/6464728151.js" crossorigin="anonymous"></script>
 
 
-    <script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous"></script>
+
   <script type="text/javascript" src="{{asset "ghostHunter/dist/jquery.ghosthunter.js"}}"></script>
 
     <script>

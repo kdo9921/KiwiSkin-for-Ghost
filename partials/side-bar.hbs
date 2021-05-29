@@ -1,16 +1,11 @@
 <div class="sidebar-container">
     <div class="sidebar">
         <div class="post_content">
-            <form>
-                <input id="search-field" />
-                <input type="submit" value="search">
-            </form>
-            <section id="results"></section>
-            <script>
-                $("#search-field").ghostHunter({
-                    results: "#results"
-                });
-            </script>
+            <div id="search" class="input-drop">
+                <input type="text" placeholder="Search places"></input>
+                <ul></ul>
+            </div>
+
             <h2 class="widget-title">Recent Posts</h2>
             {{#get "posts" limit="5" include="tags" as |recents|}}
             {{#if recents}}
