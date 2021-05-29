@@ -10,11 +10,13 @@ function navMenuToggle() {
 
 // Blog Search - GhostContentAPI
 // Copyright (c) 2021 by dbauzus-glx (https://codepen.io/dbauszus-glx/pen/oNNVMxx)
+/*
 let ghostAPI = new GhostContentAPI({
-    url: "http://localhost:2368",
-    key: "a6fed4e131f728184bf6dabe3a",
+    url: "http://site.url",
+    key: "ContentAPIkey",
     version: "v3"
 });
+*/
 
 ghostAPI.posts
     .browse({
