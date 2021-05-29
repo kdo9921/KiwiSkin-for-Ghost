@@ -1,12 +1,12 @@
 <div class="sidebar-container">
     <div class="sidebar">
-        <div class="post_content">
+        <div class="post-content">
             <div id="search" class="input-drop">
-                <input type="text" placeholder="Search places"></input>
+                <input type="text" placeholder="{{t "Search"}}"></input>
                 <ul></ul>
             </div>
 
-            <h2 class="widget-title">Recent Posts</h2>
+            <h2 class="widget-title">{{t "Recent Posts"}}</h2>
             {{#get "posts" limit="5" include="tags" as |recents|}}
             {{#if recents}}
             <ul class="sidebar-recent">
@@ -18,7 +18,7 @@
             </ul>
             {{/if}}
             {{/get}}
-            <h2 class="widget-title">Tags</h2>
+            <h2 class="widget-title">{{t "Tags"}}</h2>
             {{#get "tags" limit="10" include="count.posts"}}
             <ul class="sidebar-tags">
                 {{#foreach tags}}

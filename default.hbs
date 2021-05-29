@@ -3,52 +3,42 @@
 
 <head>
 
-    {{!-- Basic meta - advanced meta is output with {ghost_head} below --}}
-    <title>{{meta_title}}</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	{{!-- Basic meta - advanced meta is output with {ghost_head} below --}}
+	<title>{{meta_title}}</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    {{!-- Theme assets - use the {asset} helper to reference styles & scripts,
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer">
+	</script>
+	<script src="https://unpkg.com/@tryghost/content-api@1.5.6/umd/content-api.min.js"></script>
+	<script src="https://kit.fontawesome.com/6464728151.js" crossorigin="anonymous"></script>
+
+	{{!-- Theme assets - use the {asset} helper to reference styles & scripts,
     this will take care of caching and cache-busting automatically --}}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
-  <script src="https://unpkg.com/@tryghost/content-api@1.5.6/umd/content-api.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
-    <script src="{{asset 'js/main.js'}}"></script>
+	<link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
+	<link rel="stylesheet" type="text/css" href="{{asset "css/darkmode.css"}}" />
+	<script src="{{asset 'js/main.js'}}"></script>
 
 
-    {{!-- This tag outputs all your advanced SEO meta, structured data, and other important settings,
+	{{!-- This tag outputs all your advanced SEO meta, structured data, and other important settings,
     it should always be the last tag before the closing head tag --}}
-    {{ghost_head}}
-
-
-    <script src="https://kit.fontawesome.com/6464728151.js" crossorigin="anonymous"></script>
-
-
-
-  <script type="text/javascript" src="{{asset "ghostHunter/dist/jquery.ghosthunter.js"}}"></script>
-
-    <script>
-  var ghosthunter_key = 'a6fed4e131f728184bf6dabe3a';
-  //optional: set your custom ghost_root url, default is `"/ghost/api/v2"`
-  var ghost_root_url = "/ghost/api/v2"
-</script>
+	{{ghost_head}}
 
 </head>
 
 <body class="{{body_class}}">
-    {{> "header"}}
-    {{> "nav"}}
-    <div class="content_container">
-        <main>
-            {{!-- All other templates get inserted here, index.hbs, post.hbs, etc --}}
-            {{{body}}}
-        </main>
-        {{> "side-bar"}}
-    </div>
-    {{> "footer"}}
+	{{> "header"}}
+	{{> "nav"}}
+	<div class="content-container">
+		<main>
+			{{!-- All other templates get inserted here, index.hbs, post.hbs, etc --}}
+			{{{body}}}
+		</main>
+		{{> "side-bar"}}
+	</div>
+	{{> "footer"}}
 </body>
-
 </html>

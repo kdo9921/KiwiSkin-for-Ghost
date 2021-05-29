@@ -1,7 +1,7 @@
 {
     "name": "kiwiskin",
-    "description": "A brief explanation of your theme",
-    "version": "0.0.1",
+    "description": "Simple blog theme",
+    "version": "1.0.0",
     "engines": {
         "ghost-api": "v3"
     },
