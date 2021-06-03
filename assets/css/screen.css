@@ -228,7 +228,7 @@ article img {
     margin-block-start: 1em;
     margin-block-end: 1em;
 }
-
+article iframe,
 figure img {
     width: 100%;
     height: auto;
