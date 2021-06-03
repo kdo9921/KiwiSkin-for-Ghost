@@ -241,7 +241,8 @@ figure figcaption {
     margin-top: 32px;
 }
 article iframe {
-    height: calc(56.25vw - 32px);
+    width: 100%;
+    height: calc(54vw - 32px);
     max-height: 500px;
 }
 /*pagination*/
