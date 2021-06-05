@@ -380,6 +380,18 @@ article iframe {
     margin: 0 8px;
 }
 
+/* kg-gallery */
+.kg-gallery-container {
+    padding: 8px;
+}
+.kg-gallery-row {
+    display: flex;
+    margin: -16px;
+}
+.kg-gallery-image {
+    margin: 0 8px;
+}
+
 /* desktop size */
 @media (min-width : 990px) {
     .menu {
