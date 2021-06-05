@@ -206,8 +206,8 @@ footer {
 
 /* contents style */
 .post-title {
-    font-size: 150%;
-    margin: 8px 0;
+    font-size: 200%;
+    margin: 8px 0 4px;
 }
 
 .post-card-image {
@@ -228,6 +228,7 @@ article img {
     margin-block-start: 1em;
     margin-block-end: 1em;
 }
+
 figure img {
     width: 100%;
     height: auto;
@@ -240,11 +241,18 @@ figure figcaption {
 .disqus_thread {
     margin-top: 32px;
 }
+
 article iframe {
     width: 100%;
     height: calc(54vw - 32px);
     max-height: 500px;
 }
+
+.twitter-tweet {
+    margin: auto;
+}
+
+
 /*pagination*/
 .pagination {
     margin: 32px 16px;
@@ -384,10 +392,12 @@ article iframe {
 .kg-gallery-container {
     padding: 8px;
 }
+
 .kg-gallery-row {
     display: flex;
     margin: -16px;
 }
+
 .kg-gallery-image {
     margin: 0 8px;
 }
