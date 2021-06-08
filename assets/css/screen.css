@@ -341,7 +341,7 @@ article iframe {
     padding: 8px;
     background: #f3f4f6;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
-    border-radius: 6px;
+    border-radius: 2px;
 }
 
 .kg-bookmark-container {
@@ -356,7 +356,7 @@ article iframe {
 
 .kg-bookmark-container img {
     margin: 0;
-    border-radius: 6px;
+    border-radius: 4px;
 }
 
 .kg-bookmark-content {
@@ -385,9 +385,12 @@ article iframe {
 }
 
 .kg-bookmark-author {
-    margin: 0 8px;
+    margin: 0 6px;
 }
 
+.kg-bookmark-publisher::before {
+    content: "- ";
+}
 /* kg-gallery */
 .kg-gallery-container {
     padding: 8px;
