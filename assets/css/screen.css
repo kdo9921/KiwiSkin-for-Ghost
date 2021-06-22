@@ -458,3 +458,10 @@ article iframe {
         margin: 8px 0;
     }
 }
+
+
+/* prism */
+
+code {
+    white-space: pre-wrap !important;
+}
