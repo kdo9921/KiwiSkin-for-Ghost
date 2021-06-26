@@ -4,6 +4,7 @@ body {
     color: rgba(39, 48, 57, .8);
     font-family: Helvetica, Arial, sans-serif;
 }
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
 
 /* link */
 a {
@@ -459,9 +460,7 @@ article iframe {
     }
 }
 
-
-/* prism */
-
 code {
     white-space: pre-wrap !important;
+    font-family: 'Nanum Gothic Coding';
 }
