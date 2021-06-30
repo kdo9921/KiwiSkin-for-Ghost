@@ -164,13 +164,13 @@ footer {
 
 .post-card,
 .sidebar {
-    width: calc(100% - 32px);
-    margin: 16px;
+    width: calc(100% - 16px);
+    margin: 16px 8px;
     border-radius: 4px;
 }
 
 .post-content {
-    padding: 8px 16px;
+    padding: 8px 12px;
 }
 
 .content-container {
