@@ -1,10 +1,13 @@
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
 body {
     margin: 0;
     background-color: #f3f4f6;
     color: rgba(39, 48, 57, .8);
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Helvetica, 'Nanum Gothic', Arial, sans-serif;
 }
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
 
 /* link */
 a {
@@ -171,6 +174,12 @@ footer {
 
 .post-content {
     padding: 8px 12px;
+}
+
+.post-content p {
+    line-height: 1.6;
+    font-size: 16px;
+    font-family: 'Nanum Myeongjo', sans-serif;
 }
 
 .content-container {
@@ -392,6 +401,7 @@ article iframe {
 .kg-bookmark-publisher::before {
     content: "- ";
 }
+
 /* kg-gallery */
 .kg-gallery-container {
     padding: 8px;
