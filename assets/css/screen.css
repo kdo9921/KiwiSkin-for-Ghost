@@ -1,7 +1,7 @@
-
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
 @import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+
 body {
     margin: 0;
     background-color: #f3f4f6;
@@ -173,7 +173,12 @@ footer {
 }
 
 .post-content {
-    padding: 8px 12px;
+    padding: 8px 16px;
+}
+
+.post-list h1,
+.post-list p {
+    margin: 8px 0;
 }
 
 .post-content p {
