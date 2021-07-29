@@ -1,12 +1,11 @@
-@import url(https://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @import url(https://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
-@import url(https://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
 
 body {
     margin: 0;
     background-color: #f3f4f6;
     color: rgba(39, 48, 57, .8);
-    font-family: Helvetica, 'Nanum Gothic', Arial, sans-serif;
+    font-family: Helvetica, 'Noto Sans KR', Arial, sans-serif;
 }
 
 /* link */
@@ -184,7 +183,6 @@ footer {
 .post-content p {
     line-height: 1.6;
     font-size: 16px;
-    font-family: 'Nanum Myeongjo', sans-serif;
 }
 
 .content-container {
